@@ -123,9 +123,29 @@ internal class KPP_lab3_zd1
 
             case "3":
                 Console.WriteLine("3");
-                Console.WrileLine("33 blyat");
 
-            break;
+                Console.WriteLine("Выбрана задача 'Трехзначное' - Введите трехзначное число");
+                int chislo3 = Convert.ToInt32(Console.ReadLine());
+
+                if (chislo3 < 100 || chislo3 > 999)
+                {
+                    Console.WriteLine("Ошибка, число должно быть больше 100 И меньше 1000");
+                }
+                else
+                {
+
+                    string y1 = Convert.ToString(chislo3);
+                    string n1 = y1.Remove(1, 2);
+                    int N1 = Convert.ToInt32(n1); // выводит первое число
+
+                    /*string y2 = Convert.ToString(chislo3);
+                    string n2 = y2.Remove(2, 1);
+                    int N2 = Convert.ToInt32(n2);
+
+                    Console.WriteLine(N2);*/
+
+                }
+                break;
 
             case "4":
                 Console.WriteLine("4");
