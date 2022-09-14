@@ -30,7 +30,7 @@ internal class KPP_lab3_zd1
                     }
                 }
             break;
-
+                
             case "2":
                 Console.WriteLine("Выбрана задача 'ДвухЗначное' - Введите двухзначное число");
                 int chislo2 = Convert.ToInt32(Console.ReadLine());
@@ -49,12 +49,80 @@ internal class KPP_lab3_zd1
 
                     Console.WriteLine("Первое число: " + N1 + " Второе число: " + N2);
 
+                    if(N2 == 7)
+                    {
+                        Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Да");
+                    }else
+                    {
+                        Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Да");
+                    }
+
+                    if(N1 > N2)
+                    {
+                        Console.WriteLine("2.Какая из цифр двухзначного числа больше: первая или вторая: Первая");
+                    }else
+                    {
+                        Console.WriteLine("2.Какая из цифр двухзначного числа больше: первая или вторая: Вторая");
+                    }
+
+                    if(N1 == N2)
+                    {
+                        Console.WriteLine("3. Одинаковы ли цифры данного двухзначного числа: Да");
+                    }else
+                    {
+                        Console.WriteLine("3. Одинаковы ли цифры данного двухзначного числа: Нет");
+                    }
+
+                    int chislo2_temp = N1 + N2;
+
+                    if(chislo2_temp % 2 == 0)
+                    {
+                        Console.WriteLine("4. Является ли сумма цифр двухзначного числа четной: Да");
+                        Console.WriteLine("5. Является ли сумма цифр двухзначного числа нечетной: Нет");
+                    }else
+                    {
+                        Console.WriteLine("4. Является ли сумма цифр двухзначного числа четной: Нет");
+                        Console.WriteLine("5. Является ли сумма цифр двухзначного числа нечетной: Да");
+                    }
+
+                    if (chislo2_temp % 3 == 0)
+                    {
+                        Console.WriteLine("6. Кратна ли трем сумма цифр двухзначного числа: Да");
+                    } else
+                    {
+                        Console.WriteLine("6. Кратна ли трем сумма цифр двухзначного числа: Нет");
+                    }
+
+                    int a_number = 5;
+                    
+                    if (chislo2_temp % a_number == 0)
+                    {
+                        Console.WriteLine("7. Кратна ли числу A сумма цифр двухзначного числа: Да");
+                    } else
+                    {
+                        Console.WriteLine("7. Кратна ли числу A сумма цифр двухзначного числа: Нет");
+                    }
+
+                    if (N1 > N2)
+                    {
+                        Console.WriteLine("8. Какая из цифр двухзначного числа больше: Первая");
+                    }else
+                    {
+                        Console.WriteLine("8. Какая из цифр двухзначного числа больше: Вторая");
+                    }
+
+
+
+
+
+
 
                 }
                 break;
 
             case "3":
                 Console.WriteLine("3");
+
             break;
 
             case "4":
