@@ -137,14 +137,63 @@ internal class KPP_lab3_zd1
                     string y1 = Convert.ToString(chislo3);
                     string n1 = y1.Remove(1, 2);
                     int N1 = Convert.ToInt32(n1); // выводит первое число
+                    
 
-
-
-                    /*string y2 = Convert.ToString(chislo3);
-                    string n2 = y2.Remove(2, 1);
+                    string y2 = Convert.ToString(chislo3);
+                    string a2 = y2.Remove(2, 1);
+                    string n2 = a2.Remove(0, 1);
                     int N2 = Convert.ToInt32(n2);
+                    
 
-                    Console.WriteLine(N2);*/
+                    string y3 = Convert.ToString(chislo3);
+                    string n3 = y3.Remove(0, 2);
+                    int N3 = Convert.ToInt32(n3);
+
+
+                    if(N1 > N3)
+                    {
+                        Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Первая.");
+                    }else if(N1 < N3)
+                    {
+                        Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Последняя.");
+                    }else
+                    {
+                        Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Они равны.");
+                    }
+                    
+                    if(N1 > N2)
+                    {
+                        Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Первая.");
+                    }else if(N1 < N2) 
+                    {
+                         Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Вторая.");
+                    }else
+                    {
+                        Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Они равны.");
+                    }
+
+                    if(N2 > N3)
+                    {
+                        Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Вторая.");
+                    }else if(N2 < N3)
+                    {
+                        Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Последняя.");
+                    }else
+                    {
+                        Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Они равны.");
+                    }
+
+                    if((N1 == N2) && (N1 == N3))
+                    {
+                        Console.WriteLine("4. Все ли цифры трехзначного числа одинаковые: Да.");
+                    } else
+                    {
+                        Console.WriteLine("4. Все ли цифры трехзначного числа одинаковые: Нет.");
+                    }
+
+                    Console.ReadLine();
+
+                    
 
                 }
                 break;
