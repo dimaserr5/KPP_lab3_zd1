@@ -150,7 +150,7 @@ internal class KPP_lab3_zd1
                 break;
 
             case "4":
-                Console.WriteLine("4");
+                Console.WriteLine("3");
             break;
 
 
