@@ -202,6 +202,8 @@ internal class KPP_lab3_zd1
             case "4":
                 Console.WriteLine("4");
 
+           
+
 
                 Console.WriteLine("Введите сторону A");
                 int A = Convert.ToInt32(Console.ReadLine());
@@ -212,22 +214,21 @@ internal class KPP_lab3_zd1
 
                 if ((A + B) < C)
                 {
-                    int Error = 1;
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
                 }else if ((A + C) < B)
                 {
-                    int Error = 1;
-                }else if ((B + C) < A)
-                {
-                    int Error = 1;
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
                 }
-
-                if (pi.Error)
+                else if ((B + C) < A)
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
-                }else
+                }
+                else
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
                 }
+
+                
 
 
 
