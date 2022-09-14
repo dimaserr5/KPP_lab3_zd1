@@ -138,6 +138,8 @@ internal class KPP_lab3_zd1
                     string n1 = y1.Remove(1, 2);
                     int N1 = Convert.ToInt32(n1); // выводит первое число
 
+
+
                     /*string y2 = Convert.ToString(chislo3);
                     string n2 = y2.Remove(2, 1);
                     int N2 = Convert.ToInt32(n2);
