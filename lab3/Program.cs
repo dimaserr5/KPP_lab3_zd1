@@ -117,11 +117,13 @@ internal class KPP_lab3_zd1
 
 
 
+
                 }
                 break;
 
             case "3":
                 Console.WriteLine("3");
+                Console.WrileLine("33 blyat");
 
             break;
 
