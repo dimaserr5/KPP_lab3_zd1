@@ -14,13 +14,20 @@ internal class KPP_lab3_zd1
         switch (zadacha) {
 
             case "1":
-                Console.WriteLine("Выбрана задача 'Отнозначное' - Введите однозначное число");
+                Console.WriteLine("Выбрана задача 'Однозначное' - Введите однозначное число");
                 int chislo = Convert.ToInt32(Console.ReadLine());
-                if (chislo > 9 || chislo < 0) {
-                    Console.WriteLine("Ошибка, число должно быть больше -1 И меньше 10");
+                if (chislo > 10 || chislo < 2) {
+                    Console.WriteLine("Ошибка, число должно быть больше 2 И меньше 10");
                 }else
                 {
-                    
+                    if (chislo % 2 == 0)
+                    {
+                        Console.WriteLine("Число: " + chislo + " чётное");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Число: " + chislo + " не чётное");
+                    }
                 }
             break;
 
