@@ -199,8 +199,35 @@ internal class KPP_lab3_zd1
                 break;
 
             case "4":
-                Console.WriteLine("3");
-            break;
+                Console.WriteLine("4");
+
+
+
+
+                Console.WriteLine("Введите сторону A");
+                int A = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Введите сторону B");
+                int B = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Введите сторону C");
+                int C = Convert.ToInt32(Console.ReadLine());
+
+                if ((A + B) < C)
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                }
+                else if ((A + C) < B)
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                }
+                else if ((B + C) < A)
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                }
+                else
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
+                }
+                break;
 
 
             default:
