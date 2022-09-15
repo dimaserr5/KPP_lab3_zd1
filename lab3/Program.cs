@@ -239,11 +239,11 @@ internal class KPP_lab3_zd1
                 }
                 else if ((B + C) < A)
                 {
-                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                    Console.WriteLine("3. Является ли треугольник с длинами сторон a, b, c равнобедренным: Да");
                 }
                 else
                 {
-                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
+                    Console.WriteLine("3. Является ли треугольник с длинами сторон a, b, c равнобедренным: Нет");
                 }
 
                 if (A * A + B * B == C * C)
@@ -266,10 +266,9 @@ internal class KPP_lab3_zd1
 
 
 
-                Console.ReadKey();
+                    Console.ReadKey();
 
-
-                break;
+            break;
 
 
             default:
