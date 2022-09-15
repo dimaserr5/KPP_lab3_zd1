@@ -263,9 +263,17 @@ internal class KPP_lab3_zd1
                     Console.WriteLine("3. Является ли треугольник с длинами сторон a, b, c равнобедренным: Нет");
                 }
 
+                if (A == B & A == C & C == B)
+                {
+                    Console.WriteLine("3. Является ли треугольник равносторонним: Да");
+                }else
+                {
+                    Console.WriteLine("3. Является ли треугольник равносторонним: Нет");
+                }
 
 
-                Console.ReadKey();
+
+                    Console.ReadKey();
 
                 break;
 
