@@ -267,6 +267,7 @@ internal class KPP_lab3_zd1
 
                 Console.ReadKey();
 
+
                 break;
 
 
