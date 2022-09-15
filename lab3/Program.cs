@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 internal class KPP_lab3_zd1
 {
     private static void Main(string[] args)
@@ -155,9 +155,7 @@ internal class KPP_lab3_zd1
                     string y2 = Convert.ToString(chislo3);
                     string a2 = y2.Remove(2, 1);
                     string n2 = a2.Remove(0, 1);
-                    int N2 = Convert.ToInt32(n2);
-
-                    
+                    int N2 = Convert.ToInt32(n2);                 
                     string y3 = Convert.ToString(chislo3);
                     string n3 = y3.Remove(0, 2);
                     int N3 = Convert.ToInt32(n3);
@@ -239,7 +237,8 @@ internal class KPP_lab3_zd1
                 }
                 else if ((B + C) < A)
                 {
-                    Console.WriteLine("3. Является ли треугольник с длинами сторон a, b, c равнобедренным: Да");
+
+                   Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
                 }
                 else
                 {
@@ -264,11 +263,19 @@ internal class KPP_lab3_zd1
                     Console.WriteLine("3. Является ли треугольник с длинами сторон a, b, c равнобедренным: Нет");
                 }
 
+                if (A == B & A == C & C == B)
+                {
+                    Console.WriteLine("3. Является ли треугольник равносторонним: Да");
+                }else
+                {
+                    Console.WriteLine("3. Является ли треугольник равносторонним: Нет");
+                }
+
 
 
                     Console.ReadKey();
 
-            break;
+                break;
 
 
             default:
