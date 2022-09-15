@@ -157,7 +157,7 @@ internal class KPP_lab3_zd1
                     string n2 = a2.Remove(0, 1);
                     int N2 = Convert.ToInt32(n2);
 
-
+                    
                     string y3 = Convert.ToString(chislo3);
                     string n3 = y3.Remove(0, 2);
                     int N3 = Convert.ToInt32(n3);
