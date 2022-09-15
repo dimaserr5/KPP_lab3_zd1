@@ -5,7 +5,7 @@ internal class KPP_lab3_zd1
     {
         Console.WriteLine("Выберите приложение:");
         Console.WriteLine("1 - Однозначное");
-        Console.WriteLine("2 - ДвухЗначное");
+        Console.WriteLine("2 - Двухзначное");
         Console.WriteLine("3 - Трёхзначное");
         Console.WriteLine("4 - Треугольник");
 
@@ -28,11 +28,12 @@ internal class KPP_lab3_zd1
                     {
                         Console.WriteLine("Число: " + chislo1 + " не чётное");
                     }
+                    Console.ReadKey();
                 }
             break;
                 
             case "2":
-                Console.WriteLine("Выбрана задача 'ДвухЗначное' - Введите двухзначное число");
+                Console.WriteLine("Выбрана задача 'Двухзначное' - Введите двухзначное число");
                 int chislo2 = Convert.ToInt32(Console.ReadLine());
                 if(chislo2 < 10 || chislo2 > 99)
                 {
@@ -54,15 +55,15 @@ internal class KPP_lab3_zd1
                         Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Да");
                     }else
                     {
-                        Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Да");
+                        Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Нет");
                     }
 
                     if(N1 > N2)
                     {
-                        Console.WriteLine("2.Какая из цифр двухзначного числа больше: первая или вторая: Первая");
+                        Console.WriteLine("2. Какая из цифр двухзначного числа больше: первая или вторая: Первая");
                     }else
                     {
-                        Console.WriteLine("2.Какая из цифр двухзначного числа больше: первая или вторая: Вторая");
+                        Console.WriteLine("2. Какая из цифр двухзначного числа больше: первая или вторая: Вторая");
                     }
 
                     if(N1 == N2)
@@ -111,7 +112,7 @@ internal class KPP_lab3_zd1
                         Console.WriteLine("8. Какая из цифр двухзначного числа больше: Вторая");
                     }
 
-
+                    Console.ReadKey();
 
 
 
@@ -191,7 +192,7 @@ internal class KPP_lab3_zd1
                         Console.WriteLine("4. Все ли цифры трехзначного числа одинаковые: Нет.");
                     }
 
-                    Console.ReadLine();
+                    Console.ReadKey();
 
                     
 
@@ -200,9 +201,6 @@ internal class KPP_lab3_zd1
 
             case "4":
                 Console.WriteLine("4");
-
-
-
 
                 Console.WriteLine("Введите сторону A");
                 int A = Convert.ToInt32(Console.ReadLine());
@@ -213,6 +211,19 @@ internal class KPP_lab3_zd1
 
                 if ((A + B) < C)
                 {
+                    int Error = 1;
+                }else if ((A + C) < B)
+                {
+                    int Error = 1;
+                }else if ((B + C) < A)
+                {
+                    int Error = 1;
+                }
+
+                if (pi.Error)
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                }else
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
                 }
                 else if ((A + C) < B)
@@ -228,6 +239,10 @@ internal class KPP_lab3_zd1
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
                 }
 
+
+
+                Console.ReadKey();
+            break;
                 if (A * A + B * B == C * C)
                 {
                     Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Да");
