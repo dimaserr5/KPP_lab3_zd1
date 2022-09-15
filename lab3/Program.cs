@@ -227,7 +227,16 @@ internal class KPP_lab3_zd1
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
                 }
-                break;
+
+                if (A * A + B * B == C * C)
+                {
+                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Да");
+                }else
+                {
+                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Нет");
+                }
+
+                    break;
 
 
             default:
