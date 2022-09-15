@@ -11,14 +11,17 @@ internal class KPP_lab3_zd1
 
         string zadacha = Console.ReadLine();
 
-        switch (zadacha) {
+        switch (zadacha)
+        {
 
             case "1":
                 Console.WriteLine("Выбрана задача 'Однозначное' - Введите однозначное число");
                 int chislo1 = Convert.ToInt32(Console.ReadLine());
-                if (chislo1 > 10 || chislo1 < 2) {
+                if (chislo1 > 10 || chislo1 < 2)
+                {
                     Console.WriteLine("Ошибка, число должно быть больше 2 И меньше 10");
-                }else
+                }
+                else
                 {
                     if (chislo1 % 2 == 0)
                     {
@@ -30,18 +33,19 @@ internal class KPP_lab3_zd1
                     }
                     Console.ReadKey();
                 }
-            break;
-                
+                break;
+
             case "2":
                 Console.WriteLine("Выбрана задача 'Двухзначное' - Введите двухзначное число");
                 int chislo2 = Convert.ToInt32(Console.ReadLine());
-                if(chislo2 < 10 || chislo2 > 99)
+                if (chislo2 < 10 || chislo2 > 99)
                 {
                     Console.WriteLine("Ошибка, число должно быть больше 9 И меньше 100");
-                }else
+                }
+                else
                 {
                     string y1 = Convert.ToString(chislo2);
-                    string n1 = y1.Remove(1,1);
+                    string n1 = y1.Remove(1, 1);
                     int N1 = Convert.ToInt32(n1);
 
                     string y2 = Convert.ToString(chislo2);
@@ -50,37 +54,41 @@ internal class KPP_lab3_zd1
 
                     Console.WriteLine("Первое число: " + N1 + " Второе число: " + N2);
 
-                    if(N2 == 7)
+                    if (N2 == 7)
                     {
                         Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Да");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("1. Оканчивается ли данное целое число цифрой 7: Нет");
                     }
 
-                    if(N1 > N2)
+                    if (N1 > N2)
                     {
                         Console.WriteLine("2. Какая из цифр двухзначного числа больше: первая или вторая: Первая");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("2. Какая из цифр двухзначного числа больше: первая или вторая: Вторая");
                     }
 
-                    if(N1 == N2)
+                    if (N1 == N2)
                     {
                         Console.WriteLine("3. Одинаковы ли цифры данного двухзначного числа: Да");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("3. Одинаковы ли цифры данного двухзначного числа: Нет");
                     }
 
                     int chislo2_temp = N1 + N2;
 
-                    if(chislo2_temp % 2 == 0)
+                    if (chislo2_temp % 2 == 0)
                     {
                         Console.WriteLine("4. Является ли сумма цифр двухзначного числа четной: Да");
                         Console.WriteLine("5. Является ли сумма цифр двухзначного числа нечетной: Нет");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("4. Является ли сумма цифр двухзначного числа четной: Нет");
                         Console.WriteLine("5. Является ли сумма цифр двухзначного числа нечетной: Да");
@@ -89,17 +97,19 @@ internal class KPP_lab3_zd1
                     if (chislo2_temp % 3 == 0)
                     {
                         Console.WriteLine("6. Кратна ли трем сумма цифр двухзначного числа: Да");
-                    } else
+                    }
+                    else
                     {
                         Console.WriteLine("6. Кратна ли трем сумма цифр двухзначного числа: Нет");
                     }
 
                     int a_number = 5;
-                    
+
                     if (chislo2_temp % a_number == 0)
                     {
                         Console.WriteLine("7. Кратна ли числу A сумма цифр двухзначного числа: Да");
-                    } else
+                    }
+                    else
                     {
                         Console.WriteLine("7. Кратна ли числу A сумма цифр двухзначного числа: Нет");
                     }
@@ -107,7 +117,8 @@ internal class KPP_lab3_zd1
                     if (N1 > N2)
                     {
                         Console.WriteLine("8. Какая из цифр двухзначного числа больше: Первая");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("8. Какая из цифр двухзначного числа больше: Вторая");
                     }
@@ -138,63 +149,70 @@ internal class KPP_lab3_zd1
                     string y1 = Convert.ToString(chislo3);
                     string n1 = y1.Remove(1, 2);
                     int N1 = Convert.ToInt32(n1); // выводит первое число
-                    
+
 
                     string y2 = Convert.ToString(chislo3);
                     string a2 = y2.Remove(2, 1);
                     string n2 = a2.Remove(0, 1);
                     int N2 = Convert.ToInt32(n2);
-                    
+
 
                     string y3 = Convert.ToString(chislo3);
                     string n3 = y3.Remove(0, 2);
                     int N3 = Convert.ToInt32(n3);
 
 
-                    if(N1 > N3)
+                    if (N1 > N3)
                     {
                         Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Первая.");
-                    }else if(N1 < N3)
+                    }
+                    else if (N1 < N3)
                     {
                         Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Последняя.");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("1. Какая из цифр трехзначного числа больше? Первая или Последняя: Они равны.");
                     }
-                    
-                    if(N1 > N2)
+
+                    if (N1 > N2)
                     {
                         Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Первая.");
-                    }else if(N1 < N2) 
+                    }
+                    else if (N1 < N2)
                     {
-                         Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Вторая.");
-                    }else
+                        Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Вторая.");
+                    }
+                    else
                     {
                         Console.WriteLine("2. Какая из цифр трехзначного числа больше? Первая или Вторая: Они равны.");
                     }
 
-                    if(N2 > N3)
+                    if (N2 > N3)
                     {
                         Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Вторая.");
-                    }else if(N2 < N3)
+                    }
+                    else if (N2 < N3)
                     {
                         Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Последняя.");
-                    }else
+                    }
+                    else
                     {
                         Console.WriteLine("3. Какая из цифр трехзначного числа больше? Вторая или Последняя: Они равны.");
                     }
 
-                    if((N1 == N2) && (N1 == N3))
+                    if ((N1 == N2) && (N1 == N3))
                     {
                         Console.WriteLine("4. Все ли цифры трехзначного числа одинаковые: Да.");
-                    } else
+                    }
+                    else
                     {
                         Console.WriteLine("4. Все ли цифры трехзначного числа одинаковые: Нет.");
                     }
 
                     Console.ReadKey();
 
-                    
+
 
                 }
                 break;
@@ -221,7 +239,8 @@ internal class KPP_lab3_zd1
                 else if ((B + C) < A)
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
-                }else
+                }
+                else
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
                 }
@@ -246,18 +265,18 @@ internal class KPP_lab3_zd1
 
 
 
-                    Console.ReadKey();
+                Console.ReadKey();
 
-            break;
+                break;
 
 
             default:
                 Console.WriteLine("Ошибка задачи");
-            break;
-            
+                break;
+
 
         }
-            
+
 
     }
 }
