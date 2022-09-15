@@ -265,14 +265,10 @@ internal class KPP_lab3_zd1
 
                 if (A == B & A == C & C == B)
                 {
-
                     Console.WriteLine("3. Является ли треугольник равносторонним: Да");
-
                 }else
                 {
-
                     Console.WriteLine("3. Является ли треугольник равносторонним: Нет");
-
                 }
 
 
