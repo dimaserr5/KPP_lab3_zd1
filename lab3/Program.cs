@@ -200,6 +200,7 @@ internal class KPP_lab3_zd1
                 break;
 
             case "4":
+
                 Console.WriteLine("4");
 
                 Console.WriteLine("Введите сторону A");
@@ -211,19 +212,6 @@ internal class KPP_lab3_zd1
 
                 if ((A + B) < C)
                 {
-                    int Error = 1;
-                }else if ((A + C) < B)
-                {
-                    int Error = 1;
-                }else if ((B + C) < A)
-                {
-                    int Error = 1;
-                }
-
-                if (pi.Error)
-                {
-                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
-                }else
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
                 }
                 else if ((A + C) < B)
@@ -233,25 +221,25 @@ internal class KPP_lab3_zd1
                 else if ((B + C) < A)
                 {
                     Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Нет.");
+                }else
+                {
+                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
+                }
+
+                if (A * A + B * B == C * C)
+                {
+                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Да");
                 }
                 else
                 {
-                    Console.WriteLine("1. Существует ли треугольник с длинами сторон a, b, c: Да.");
+                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Нет");
                 }
 
 
 
                 Console.ReadKey();
-            break;
-                if (A * A + B * B == C * C)
-                {
-                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Да");
-                }else
-                {
-                    Console.WriteLine("2. Является ли треугольник с длинами сторон a, b, c прямоугольным: Нет");
-                }
 
-                    break;
+            break;
 
 
             default:
